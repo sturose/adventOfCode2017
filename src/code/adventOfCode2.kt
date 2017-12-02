@@ -35,8 +35,6 @@ fun day2problem1(inputString: String): Any? {
 }
 
 fun day2problem2(inputString: String): Any? {
-    var lowest: Long
-    var highest: Long
     var total: Long = 0
 
     val inputString = inputString.replace('\t', ' ')
