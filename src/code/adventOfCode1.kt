@@ -1,13 +1,5 @@
 package code
 
-import java.io.File
-
-fun main(args: Array<String>) {
-    val file = ClassLoader.getSystemResource("resources/input1.txt").file
-    val inputString = File(file).readText().trim()
-    println(problem1(inputString))
-    println(problem2(inputString))
-}
 
 fun problem1(inputString: String): Any? {
     var prevChar = '0'  // zero is a sane default
