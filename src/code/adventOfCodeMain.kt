@@ -23,8 +23,10 @@ fun main(args: Array<String>) {
     println(day3problem2(368078))
 
     println("\nDay 4: ")
-    println(day3problem1(368078))
-    println(day3problem2(368078))
+    val file4 = ClassLoader.getSystemResource("resources/input4.txt").file
+    val inputString4 = File(file4).readText().trim()
+    println(day4problem1(inputString4))
+    println(day4problem2(inputString4))
 }
 
 
