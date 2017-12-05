@@ -1,12 +1,10 @@
 package code
 
-import java.util.*
-
 fun day4problem1(inputString: String): Any? {
 
     val lines = inputString.split("\n".toRegex())
 
-    var validCount = 0;
+    var validCount = 0
 
 
     for (line in lines) {

@@ -27,6 +27,12 @@ fun main(args: Array<String>) {
     val inputString4 = File(file4).readText().trim()
     println(day4problem1(inputString4))
     println(day4problem2(inputString4))
+
+    println("\nDay 5: ")
+    val file5 = ClassLoader.getSystemResource("resources/input5.txt").file
+    val inputString5 = File(file5).readText().trim()
+    println(day5problem1(inputString5))
+    println(day5problem2(inputString5))
 }
 
 
