@@ -4,10 +4,10 @@ import java.io.File
 
 
 fun main(args: Array<String>) {
-    val file = ClassLoader.getSystemResource("resources/input1.txt").file
-    val inputString = File(file).readText().trim()
 
     println("Day 1: ")
+    val file = ClassLoader.getSystemResource("resources/input1.txt").file
+    val inputString = File(file).readText().trim()
     println(problem1(inputString))
     println(problem2(inputString))
 
@@ -33,6 +33,13 @@ fun main(args: Array<String>) {
     val inputString5 = File(file5).readText().trim()
     println(day5problem1(inputString5))
     println(day5problem2(inputString5))
+
+
+    println("\nDay 6: ")
+    val file6 = ClassLoader.getSystemResource("resources/input6.txt").file
+    val inputString6 = File(file6).readText().trim()
+    println(day6problem1(inputString6))
+    println(day6problem2(inputString6))
 }
 
 
