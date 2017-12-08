@@ -38,7 +38,7 @@ fun day6problem1(inputString: String): Any? {
     return jumps
 }
 
-fun largestIndex(values: ArrayList<Int>): Int {
+private fun largestIndex(values: ArrayList<Int>): Int {
     var maxValue = values[0]
     var count = 0
     var returnIndex = 0

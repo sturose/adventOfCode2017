@@ -4,7 +4,7 @@ import java.io.File
 
 
 fun main(args: Array<String>) {
-
+/*
     println("Day 1: ")
     val file = ClassLoader.getSystemResource("resources/input1.txt").file
     val inputString = File(file).readText().trim()
@@ -40,6 +40,14 @@ fun main(args: Array<String>) {
     val inputString6 = File(file6).readText().trim()
     println(day6problem1(inputString6))
     println(day6problem2(inputString6))
+
+    */
+
+    println("\nDay 7: ")
+    val file7 = ClassLoader.getSystemResource("resources/input7.txt").file
+    val inputString7 = File(file7).readText().trim()
+    println(day7problem1(inputString7))
+    println(day7problem2(inputString7))
 }
 
 
