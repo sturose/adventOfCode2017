@@ -41,13 +41,20 @@ fun main(args: Array<String>) {
     println(day6problem1(inputString6))
     println(day6problem2(inputString6))
 
-    */
 
     println("\nDay 7: ")
     val file7 = ClassLoader.getSystemResource("resources/input7.txt").file
     val inputString7 = File(file7).readText().trim()
     println(day7problem1(inputString7))
     println(day7problem2(inputString7))
+
+       */
+
+    println("\nDay 8: ")
+    val file8 = ClassLoader.getSystemResource("resources/input8.txt").file
+    val inputString8 = File(file8).readText().trim()
+    println(day8problem1(inputString8))
+    println(day8problem2(inputString8))
 }
 
 
