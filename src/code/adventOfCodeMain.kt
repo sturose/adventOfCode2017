@@ -11,7 +11,6 @@ fun main(args: Array<String>) {
     println(problem1(inputString))
     println(problem2(inputString))
 
-
     println("\nDay 2: ")
     val file2 = ClassLoader.getSystemResource("resources/input2.txt").file
     val inputString2 = File(file2).readText().trim()
@@ -34,13 +33,11 @@ fun main(args: Array<String>) {
     println(day5problem1(inputString5))
     println(day5problem2(inputString5))
 
-
     println("\nDay 6: ")
     val file6 = ClassLoader.getSystemResource("resources/input6.txt").file
     val inputString6 = File(file6).readText().trim()
     println(day6problem1(inputString6))
     println(day6problem2(inputString6))
-
 
     println("\nDay 7: ")
     val file7 = ClassLoader.getSystemResource("resources/input7.txt").file
@@ -60,13 +57,20 @@ fun main(args: Array<String>) {
     println(day9problem1(inputString9))
     println(day9problem2(inputString9))
 
-       */
-
     println("\nDay 10: ")
     val file10 = ClassLoader.getSystemResource("resources/input10.txt").file
     val inputString10 = File(file10).readText().trim()
- //   println(day10problem1(inputString10))
+    println(day10problem1(inputString10))
     println(day10problem2(inputString10))
+
+
+    */
+
+    println("\nDay 11: ")
+    val file11 = ClassLoader.getSystemResource("resources/input11.txt").file
+    val inputString11 = File(file11).readText().trim()
+    println(day11problem1(inputString11))
+    println(day11problem2(inputString11))
 
 }
 
