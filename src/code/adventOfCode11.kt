@@ -28,7 +28,7 @@ fun day11problem1(inputString: String): Any? {
         }
     }
     if(abs(vertCount) > abs(horCount)){
-        return abs(vertCount)
+        return (abs(vertCount) - abs(horCount)) /2 + abs(horCount)
     }
 
     return abs(horCount)
@@ -60,7 +60,9 @@ fun day11problem2(inputString: String): Any? {
             }
         }
         if(abs(vertCount) > max){
-            max = abs(vertCount)
+            if(max < (abs(vertCount) - abs(horCount)) /2 + abs(horCount)) {
+                max = (abs(vertCount) - abs(horCount)) /2 + abs(horCount)
+            }
         }
         if(abs(horCount) > max){
             max = abs(horCount)
