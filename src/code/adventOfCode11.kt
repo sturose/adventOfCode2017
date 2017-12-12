@@ -12,18 +12,19 @@ fun day11problem1(inputString: String): Any? {
     var horCount = 0
 
     for (direction in directions) {
+        val addVal = 3 - direction.length
         for(i in 0..direction.length - 1) {
             if (direction.get(i).equals('n')) {
-                vertCount += 1
+                vertCount += addVal
             }
             if (direction.get(i).equals('s')) {
-                vertCount -= 1
+                vertCount -= addVal
             }
             if (direction.get(i).equals('e')) {
-                horCount += 1
+                horCount += addVal
             }
             if (direction.get(i).equals('w')) {
-                horCount -= 1
+                horCount -= addVal
             }
         }
     }
@@ -45,18 +46,19 @@ fun day11problem2(inputString: String): Any? {
     var max = 0
 
     for (direction in directions) {
+        val addVal = 3 - direction.length
         for(i in 0..direction.length - 1) {
             if (direction.get(i).equals('n')) {
-                vertCount += 1
+                vertCount += addVal
             }
             if (direction.get(i).equals('s')) {
-                vertCount -= 1
+                vertCount -= addVal
             }
             if (direction.get(i).equals('e')) {
-                horCount += 1
+                horCount += addVal
             }
             if (direction.get(i).equals('w')) {
-                horCount -= 1
+                horCount -= addVal
             }
         }
         if(abs(vertCount) > max){
@@ -67,9 +69,6 @@ fun day11problem2(inputString: String): Any? {
         if(abs(horCount) > max){
             max = abs(horCount)
         }
-    }
-    if(abs(vertCount) > abs(horCount)){
-        return abs(vertCount)
     }
 
     return max

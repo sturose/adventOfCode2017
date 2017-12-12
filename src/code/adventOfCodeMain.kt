@@ -63,13 +63,15 @@ fun main(args: Array<String>) {
     println(day10problem1(inputString10))
     println(day10problem2(inputString10))
 
+
+    */
+
     println("\nDay 11: ")
     val file11 = ClassLoader.getSystemResource("resources/input11.txt").file
     val inputString11 = File(file11).readText().trim()
     println(day11problem1(inputString11))
     println(day11problem2(inputString11))
 
-    */
 
     println("\nDay 12: ")
     val file12 = ClassLoader.getSystemResource("resources/input12.txt").file
